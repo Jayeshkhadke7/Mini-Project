@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alkalami', serif;
+}
+.hero-img {
+    background-image: url(Images/JK\ Mariott\ 2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.animate-character{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      
+      #f56d38 37%,
+      #0beee3 29%,
+      #32dd10 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 190px;
+  }
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+p{
+    font-size: 20px;    
+    font-style: oblique;
+    
+}
+.hero-wrapper{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero-wrapper h1{
+    font-size: 70px;
+    margin-left: 40px;
+    text-align: center;
+    /* color: burlywood; */
+    font-weight: bold;
+}
+.hero-wrapper .form-code{
+    display: block;
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 250px;
+}
+.hero-wrapper .form-code input{
+   border-radius: 30px;
+   width: 70%;
+   height: 50px;
+   outline: none;
+   border: none;
+}
+.hero-wrapper .form-code input::placeholder{
+    padding-left: 170px;
+ }
+ .hero-wrapper .form-code button{
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 170px;
+    background-color: rgb(23, 31, 31);
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    transition: 0.5s;
+ }
+ .hero-wrapper .form-code button:hover{
+    background-color: transparent;
+    border: 2px solid black;
+ }
+ .product{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+ }
+ .product-list{
+    float: left;
+    width: 33.33%;
+ }
